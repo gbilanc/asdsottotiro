@@ -1,10 +1,10 @@
 <!--?php include "sponsors.html" ?--> 
-<div class="box container" align="left">
+<div class="box container" align="center">
     <a href="https://www.facebook.com/people/FLM-Centro-Revisioni/100063817802136/">
-        <img class="mySlides" src="assets/img/FLM.png" alt="nardiscar">
+        <img class="mySlides" src="assets/img/FLM.png" alt="flm">
     </a>
     <a href="#">
-        <img class="mySlides" src="assets/img/nsm.png" alt="nsmsrl">
+        <img class="mySlides" src="assets/img/nsm.png" alt="nsm">
     </a>
     <a href="https://www.cdre.it/">
         <img class="mySlides" src="assets/img/Enea.png" alt="cdre">
@@ -27,6 +27,17 @@
     <a href="#">
         <img class="mySlides" src="assets/img/mochiales.jpg" alt="mochi">
     </a>
+    <p>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </p>
 </div>
 <p>
 <div class="box container">
@@ -35,7 +46,7 @@
         <h3 style="text-align: justify;">Un' Associazione sportiva di
             tiro dinamico affiliata alla FITDS. Campo di tiro esclusivo in
             provincia di Fermo. <span style="color: #448">Diventa anche
-            tu un nostro socio!</span> Sono sempre aperte nuove
+                tu un nostro socio!</span> Sono sempre aperte nuove
             iscrizioni consulta il nostro regolamento e contattaci ai
             numeri indicati. </h3>
     </div>
@@ -58,23 +69,25 @@
 </div>
 <p>
 
-
 <script>
     var slideIndex = 0;
-    carousel();
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    showSlides();
 
-    function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+    function showSlides() {
+        for (var i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            dots[i].classList.remove("dot_on");
         }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].classList.add("dot_on");
+
         slideIndex++;
-        if (slideIndex > x.length) {
-            slideIndex = 1;
+        if (slideIndex === slides.length) {
+            slideIndex = 0;
         }
-        x[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 3000);
+        setTimeout(showSlides, 3000);
     }
 </script>
 
