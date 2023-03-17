@@ -6,37 +6,36 @@
 */
 
 body {
-	font-size: 15px;
     line-height: 1.52;
     color: #717f86;
-    font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 #banner{
     background: url(../img/banner-bg.jpg) no-repeat center top;
     background-size: cover;
-    min-height: 630px;
+    min-height: 600px;
 }
 .bg-color{
-    background-color: RGBA(0, 0, 0, 0.61);
-    min-height: 630px;
+    background-color: RGBA(128,128,128, 0.5);
+    min-height: 600px;
 }
 #banner h2{
     font-family: 'Satisfy', sans-serif;
@@ -53,7 +52,7 @@ table {
 }
 .logo-name{
     font-family: 'Satisfy', sans-serif;
-    font-size: 65px;
+    font-size: 45px;
     margin-top: 40px;
     color: #FFB03B;
 }
@@ -116,7 +115,8 @@ table {
     display: table-cell;
     vertical-align: top;
 }
-.bg-13 {background-color: #f04e4e;
+.bg-13 {
+    background-color: #f04e4e;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -358,7 +358,7 @@ table {
     float: left;
     color: #B1B1B1;
     font-family: Satisfy,'Open Sans',arial;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .menu-restaurant span.clearfix {
     position: relative;
@@ -375,10 +375,10 @@ table {
     color: #fff;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 #menu-flters ul li a {
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 14px;
     color: #565656;
     border-radius: 0px;
@@ -452,7 +452,7 @@ table {
 }
 @media (min-width: 20px) and (max-width: 450px) {
     .menu-restaurant {
-    width: 100%;
+        width: 100%;
     }
     .details-text {
         border:0px;
@@ -471,8 +471,12 @@ table {
         font-size: 25px;
     }
     #banner p{
-        font-size: 25px;
+        font-size: 20px;
     }
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
 }
